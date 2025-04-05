@@ -1,29 +1,23 @@
+import { Container } from './components/Container';
+import { Heading } from './components/Heading';
+
 import './style/theme.css';
 import './style/global.css';
 
 export function App() {
     return (
         <>
-            <div className='container'>
-                <section className='content'>
+            <Container>
+                <Heading>Testando meu componente Heading!</Heading>
+                <section>
                     Logo
                 </section>
-            </div>
-            <div className='container'>
-                <section className='content'>
+            </Container>
+            <Container>
+                <section>
                     Menu
                 </section>
-            </div>
-            <div className='container'>
-                <section className='content'>
-                    Form
-                </section>
-            </div>
-            <div className='container'>
-                <section className='content'>
-                    Footer
-                </section>
-            </div>
+            </Container>
         </>
     )
 };
