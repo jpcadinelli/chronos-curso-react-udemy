@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 export function TaskForm() {
     return <form className={ styles.form } action="">
         <div className={ styles.formRow }>
-            <DefaultInput id='taskInput' type='text'>task</DefaultInput>
+            <DefaultInput id='taskInput' labelText='task' type='text' />
         </div>
 
         <div className={ styles.formRow }>
