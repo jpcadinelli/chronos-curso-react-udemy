@@ -1,10 +1,10 @@
+import { DefaultInput } from '../DefaultInput';
 import styles from './styles.module.css';
 
 export function TaskForm() {
     return <form className={ styles.form } action="">
         <div className={ styles.formRow }>
-            <label htmlFor="taskInput">task</label>
-            <input id='taskInput' type="text" />
+            <DefaultInput id='taskInput' type='text'>task</DefaultInput>
         </div>
 
         <div className={ styles.formRow }>
