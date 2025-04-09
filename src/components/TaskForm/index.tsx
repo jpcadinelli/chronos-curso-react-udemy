@@ -1,4 +1,6 @@
+import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 import { Cycles } from '../Cycles';
+import { DefaultButton } from '../DefaultButton';
 import { DefaultInput } from '../DefaultInput';
 
 import styles from './styles.module.css';
@@ -23,7 +25,8 @@ export function TaskForm() {
         </div>
 
         <div className={ styles.formRow }>
-            <button>Enviar</button>
+            <DefaultButton icon={ <PlayCircleIcon /> } color='green'/>
+            <DefaultButton icon={ <StopCircleIcon /> } color='red'/>
         </div>
     </form>
 };
