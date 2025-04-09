@@ -1,4 +1,6 @@
+import { Cycles } from '../Cycles';
 import { DefaultInput } from '../DefaultInput';
+
 import styles from './styles.module.css';
 
 export function TaskForm() {
@@ -17,8 +19,7 @@ export function TaskForm() {
         </div>
 
         <div className={ styles.formRow }>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0 0 0 0 0 0 0</p>
+            <Cycles />
         </div>
 
         <div className={ styles.formRow }>
