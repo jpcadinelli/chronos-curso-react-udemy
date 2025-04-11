@@ -5,7 +5,7 @@ import { DefaultInput } from '../DefaultInput';
 
 import styles from './styles.module.css';
 
-export function TaskForm() {
+export function MainForm() {
     return <form className={ styles.form } action="">
         <div className={ styles.formRow }>
             <DefaultInput 
