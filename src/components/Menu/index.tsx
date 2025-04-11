@@ -15,11 +15,11 @@ export function Menu() {
             const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
             return nextTheme;
         });
-
-        useEffect(() => {
-            document.documentElement.setAttribute('data-theme', theme);
-          }, [theme]);
     };
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme);
+      }, [theme]);
 
     return <nav className={ styles.menu }>
         <a className={ styles.menuLink } href="#" aria-label='Ir para a Home' title='Ir para a Home'>
